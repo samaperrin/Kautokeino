@@ -21,10 +21,25 @@ kautokeino_JSDM.R
 	This script runs a joint species distribution model as based on Pollock et al.'s 2014 paper "Understanding co-occurrence by modelling species simultaneously with a Joint Species Distribution Model (JSDM)"
 
 
-DATA FILES
+SOURCE SCRIPTS
 
 db_connect.R
 	Contains database connectors and relevant libraries.
 
 fit_JSDM.R
 	Contains script for running JSDM
+	
+connectspecies_function.R
+  Contains function which produces connectivity matrix for a single species. Input is full matrix, locationIDs and   species vernacular name.
+
+
+DATA FILES
+
+connectivity_matrix.rda
+  Contains maximum slope between any lake i and closest downstream lake for both of which we have fish occurrence data.
+  
+locationIDs.rda
+  Link table which matches lakeIDs used in connectivity matrix to location UUIDs used in occurrence table.
+  
+richness_all.rda
+  Full occurrence table with climate and hydrological data.
