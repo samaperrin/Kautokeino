@@ -30,27 +30,30 @@ Kautokeino_HMSC.R
 
 SOURCE SCRIPTS
 
-db_connect.R
+db_connect.R  
 	Contains database connectors and relevant libraries.
 
-fit_JSDM.R
+fit_JSDM.R  
 	Contains script for running JSDM
 	
-connectspecies_function.R
+connectspecies_function.R  
   Contains function which produces connectivity matrix for a single species. Input is full matrix, locationIDs 
   and species vernacular name.
 
 
 DATA FILES
 
-connectivity_matrix.rda
+connectivity_matrix.rda  
   Contains maximum slope between any lake i and closest downstream lake for both of which we have fish occurrence data.
   
-locationIDs.rda
+locationIDs.rda  
   Link table which matches lakeIDs used in connectivity matrix to location UUIDs used in occurrence table.
   
-richness_all.rda
+richness_all.rda  
   Full occurrence table with climate and hydrological data.
   
-location_matrix.csv
+location_matrix.csv  
   Shows the distance from every lake for which we have fish data to every other lake for which we have fish data. Length calculated using pgRouting. Lakes not included in length measurement. For more information, ask Jakob Miksch.
+  
+kauto_hmsc.rda  
+  Full HMSC model for the Kautokeino catchment.
